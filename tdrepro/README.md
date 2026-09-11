@@ -25,7 +25,6 @@ bash docker_runner_tdrepro.sh hbase_tests.csv "hbase"
 
 ```shell
 export OPENAI_API_KEY="YOUR_KEY_HERE"
-TDRepro_v1: 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
 bash search_for_failure_reproducing.sh ../data/all_142_tests.csv "idoft"
 bash search_for_failure_reproducing.sh ../data/all_142_tests.csv "flakerake_new"
 ```
