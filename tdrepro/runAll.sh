@@ -52,8 +52,8 @@ while IFS= read -r line
     testName_with_dot="${testName//#/.}"
     testClass="$(echo $testName_with_dot | rev | cut -d'.' -f2 | rev)"
      
-    #find $currentDir/FlakeSync-Shanto-Modified -name pom.xml
-    cd $currentDir/FlakeSync-Shanto-Modified/
+    #find $currentDir/FlakeSync -name pom.xml
+    cd $currentDir/FlakeSync/
     mvn clean install -DskipTests
 
     M2_REPO=$(mvn help:evaluate -Dexpression=settings.localRepository -q -DforceStdout)
